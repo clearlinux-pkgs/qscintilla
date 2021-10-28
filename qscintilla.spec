@@ -4,7 +4,7 @@
 #
 Name     : qscintilla
 Version  : 2.10.8
-Release  : 22
+Release  : 23
 URL      : https://sourceforge.net/projects/pyqt/files/QScintilla2/QScintilla-2.10.8/QScintilla_gpl-2.10.8.tar.gz
 Source0  : https://sourceforge.net/projects/pyqt/files/QScintilla2/QScintilla-2.10.8/QScintilla_gpl-2.10.8.tar.gz
 Summary  : No detailed summary available

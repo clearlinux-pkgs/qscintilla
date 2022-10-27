@@ -1,5 +1,0 @@
-pushd Python
-python3 configure.py --pyqt=PyQt5
-make
-%make_install
-popd

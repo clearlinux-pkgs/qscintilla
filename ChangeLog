@@ -1,3 +1,113 @@
+2023-04-24  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, qt/qsciscintilla.cpp:
+	Fixed a regression in QSciScintilla::text().
+	[b748338e45bb] [2.14.0]
+
+2023-04-20  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* qt/qsciscintilla.cpp:
+	Use SCI_ADDTEXT rather than SCI_SETTEXT to set the text so tht
+	embedded zero bytes can be loaded.
+	[774bcbca48b9]
+
+	* NEWS, qt/InputMethod.cpp, qt/SciAccessibility.cpp,
+	qt/SciAccessibility.h, qt/qscilexer.cpp, qt/qscilexer.h,
+	qt/qsciscintilla.cpp, qt/qsciscintillabase.cpp,
+	qt/qsciscintillabase.h:
+	Refactored the conversions from bytes to a QString to allow for
+	embedded zero bytes and to remove duplicated code.
+	[c8eb0d943c07]
+
+2023-03-31  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, qt/qscintilla_cs.ts, qt/qscintilla_de.qm, qt/qscintilla_de.ts,
+	qt/qscintilla_es.ts, qt/qscintilla_fr.ts, qt/qscintilla_pt_br.ts:
+	Fixed the .ts files.
+	[5d000fe9301e]
+
+2023-03-28  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* Python/sip/qscilexerasm.sip, Python/sip/qscilexermasm.sip,
+	Python/sip/qscilexernasm.sip, Python/sip/qscimodcommon.sip,
+	Python/sip/qsciscintillabase.sip:
+	Implemented the Python wrappers for the assembler lexers.
+	[0030fcf7a208]
+
+	* qt/qscintilla_cs.ts, qt/qscintilla_de.ts, qt/qscintilla_es.ts,
+	qt/qscintilla_fr.ts, qt/qscintilla_pt_br.ts:
+	Updated the translation source files.
+	[0fb2491bb039]
+
+	* qt/qscilexer.cpp, qt/qscilexer.h, qt/qscilexerasm.cpp,
+	qt/qscilexerasm.h, qt/qsciscintillabase.h:
+	Completed the implementation of the assember lexers. Note we choose
+	not to support explicit fold points.
+	[629503d9342b]
+
+	* NEWS, qt/qsciscintilla.cpp, qt/qsciscintilla.h,
+	qt/qsciscintillabase.cpp, qt/qsciscintillabase.h:
+	Removed a Qt4 compatibility macro.
+	[4b23653f3e5c]
+
+	* qt/qscilexerasm.cpp, qt/qscilexerasm.h:
+	Added the support for compact and multi-line comment folding to
+	QsciLexerAsm.
+	[708bed0e9e2d]
+
+2023-03-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, qt/qscilexerasm.cpp, qt/qscilexerasm.h,
+	qt/qscilexerintelhex.cpp, qt/qscilexermasm.cpp, qt/qscilexermasm.h,
+	qt/qscilexernasm.cpp, qt/qscilexernasm.h, qt/qscilexertekhex.cpp,
+	qt/qscintilla.pro:
+	Initial implementation of the QsciLexerAsm, QsciLexerMASM and
+	QsciLexerNASM classes.
+	[f216dfe8a7a9]
+
+2023-03-26  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* Python/sip/qscilexerintelhex.sip, Python/sip/qscilexersrec.sip,
+	Python/sip/qscilexertekhex.sip, Python/sip/qscimodcommon.sip,
+	Python/sip/qsciscintillabase.sip:
+	Completed the new Python wrappers.
+	[9acd96c733d2]
+
+	* Python/sip/qscilexerhex.sip, Python/sip/qscilexerintelhex.sip,
+	Python/sip/qscilexersrec.sip, Python/sip/qscilexertekhex.sip:
+	Added the Python bindings for the new lexer classes.
+	[7882938747c0]
+
+	* qt/qscintilla_cs.ts, qt/qscintilla_de.ts, qt/qscintilla_es.ts,
+	qt/qscintilla_fr.ts, qt/qscintilla_pt_br.ts:
+	Updated the translation source files.
+	[ee55692ee907]
+
+	* NEWS, qt/qscilexerhex.cpp, qt/qscilexerhex.h,
+	qt/qscilexerintelhex.cpp, qt/qscilexerintelhex.h,
+	qt/qscilexersrec.cpp, qt/qscilexersrec.h, qt/qscilexertekhex.cpp,
+	qt/qscilexertekhex.h, qt/qscintilla.pro:
+	Added the QsciLexerHex, QsciLexerIntelHex, QsciLexerSRec and
+	QsciLexerTekHex classes.
+	[5e1cb8b52206]
+
+	* Merged the 2.13-maint branch.
+	[a9480b2f6bdb]
+
+2023-03-02  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, lexlib/LexAccessor.h:
+	Disabled an assert() in the lexer library as the following code
+	handles the case anyway. The real bug is probably in the HTML lexer
+	triggered when the HTML has embedded DTD.
+	[6452e3b634b6] <2.13-maint>
+
+2023-01-15  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 2.13.4 for changeset b2c87a81f0c3
+	[d2bc1ac10aa3] <2.13-maint>
+
 2022-12-06  Phil Thompson  <phil@riverbankcomputing.com>
 
 	* NEWS, src/EditView.cxx:

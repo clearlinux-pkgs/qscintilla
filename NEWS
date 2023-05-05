@@ -1,3 +1,9 @@
+v2.14.0 24th April 2023
+  - Added the QsciLexerAsm, QsciLexerMASM and QsciLexerNASM classes.
+  - Added the QsciLexerHex, QsciLexerIntelHex, QsciLexerSRec and
+    QsciLexerTekHex classes.
+  - Bug fixes.
+
 v2.13.4 6th December 2022
   - Added the .api files for Python v3.10 and v3.11.
   - Bug fixes.

@@ -5,7 +5,7 @@
 #
 Name     : qscintilla
 Version  : 2.14.0
-Release  : 31
+Release  : 32
 URL      : https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.14.0/QScintilla_src-2.14.0.tar.gz
 Source0  : https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.14.0/QScintilla_src-2.14.0.tar.gz
 Summary  : No detailed summary available
@@ -21,9 +21,7 @@ BuildRequires : pkgconfig(Qt5Designer)
 BuildRequires : pkgconfig(Qt5Gui)
 BuildRequires : pkgconfig(Qt5PrintSupport)
 BuildRequires : pkgconfig(Qt5Widgets)
-BuildRequires : qscintilla-dev
 BuildRequires : sip
-BuildRequires : sip-dev
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -91,7 +89,7 @@ make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1683308330
+export SOURCE_DATE_EPOCH=1683564477
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/qscintilla
 cp %{_builddir}/QScintilla_src-%{version}/LICENSE %{buildroot}/usr/share/package-licenses/qscintilla/8624bcdae55baeef00cd11d5dfcfa60f68710a02 || :

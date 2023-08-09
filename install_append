@@ -1,0 +1,7 @@
+# Install the Python bindings
+pushd Python
+cp -p pyproject-qt5.toml pyproject.toml
+sip-build --no-make --qsci-include-dir %{buildroot}/usr/include/qt5 --qmake-setting 'INCLUDEPATH+=/usr/include/qt5/QtWidgets' --qmake-setting 'INCLUDEPATH+=/usr/include/qt5/QtPrintSupport' --verbose
+make %{?_smp_mflags} -C build
+make -C build install INSTALL_ROOT=%{buildroot}
+popd

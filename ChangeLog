@@ -1,3 +1,28 @@
+2023-06-07  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, Python/project.py:
+	Rolled back the explicit setting of the minimum GLIBC version now
+	that we have changed the build platform.
+	[4ea73206e689] [2.14.1] <2.14-maint>
+
+2023-05-22  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, qt/InputMethod.cpp, qt/qscintilla.pro:
+	Fixed a pointer truncation in the handling of input method queries.
+	[e3a47ebe8c93] <2.14-maint>
+
+2023-05-14  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* NEWS, Python/project.py:
+	Fixed the manylinux wheel tag when building on Ubuntu 22.04.
+	[77c97572f18c] <2.14-maint>
+
+2023-04-27  Phil Thompson  <phil@riverbankcomputing.com>
+
+	* .hgtags:
+	Added tag 2.14.0 for changeset b748338e45bb
+	[670c1fb1beeb]
+
 2023-04-24  Phil Thompson  <phil@riverbankcomputing.com>
 
 	* NEWS, qt/qsciscintilla.cpp:

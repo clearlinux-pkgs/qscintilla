@@ -1,6 +1,6 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
-PyQt5
+PyQt6
 buildreq-kde
 pypi-pyqt_builder-python3
 sip

@@ -7,7 +7,7 @@
 #
 Name     : qscintilla
 Version  : 2.14.1
-Release  : 54
+Release  : 55
 URL      : https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.14.1/QScintilla_src-2.14.1.tar.gz
 Source0  : https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.14.1/QScintilla_src-2.14.1.tar.gz
 Summary  : No detailed summary available
